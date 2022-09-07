@@ -28,3 +28,4 @@ Task 10 |  Write a script that prints the result of POWER divided by DIVIDE, fol
  Task 13 | Write a script that prints a number with two decimal places, followed by a new line.
 
 
+Advance Task 1
