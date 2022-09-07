@@ -30,3 +30,4 @@ Task 10 |  Write a script that prints the result of POWER divided by DIVIDE, fol
 
 Advance Task 1
  Advance task 2 rot1encryption
+ Advanced Task 3 Odd 
