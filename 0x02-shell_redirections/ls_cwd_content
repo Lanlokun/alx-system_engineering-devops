@@ -1,16 +1,23 @@
-total 48
-drwxr-xr-x 2 root root 279 Sep  6 06:16 .
-drwxr-xr-x 6 root root 177 Sep  6 03:26 ..
--rwxr--r-- 1 root root  32 Sep  6 04:51 0-hello_world
--rwxr--r-- 1 root root  28 Sep  6 04:27 1-confused_smiley
--rwxr--r-- 1 root root  27 Sep  6 05:04 2-hellofile
--rwxr--r-- 1 root root  38 Sep  6 05:17 3-twofiles
--rwxr--r-- 1 root root  34 Sep  6 05:41 4-lastlines
--rwxr--r-- 1 root root  35 Sep  6 05:48 5-firstlines
--rwxr--r-- 1 root root  40 Sep  6 05:53 6-third_line
--rwxr--r-- 1 root root  99 Sep  6 06:04 7-file
--rwxr--r-- 1 root root  35 Sep  6 06:11 8-cwd_state
--rw-r--r-- 1 root root  12 Sep  6 06:06 \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
--rw-r--r-- 1 root root 735 Sep  6 05:54 iacta
--rw-r--r-- 1 root root   0 Sep  6 06:16 ls_cwd_content
--rw-r--r-- 1 root root 410 Sep  6 06:07 README.md
+total 80
+drwxr-xr-x 2 root root 4096 Sep  7 03:40 .
+drwxr-xr-x 7 root root  216 Sep  6 21:39 ..
+-rwxr--r-- 1 root root   32 Sep  6 04:51 0-hello_world
+-rwxr--r-- 1 root root   47 Sep  6 06:31 10-no_more_js
+-rwxr--r-- 1 root root   49 Sep  6 06:43 11-directories
+-rwxr--r-- 1 root root   31 Sep  6 10:35 12-newest_files
+-rwxr--r-- 1 root root   27 Sep  6 10:42 13-unique
+-rwxr--r-- 1 root root   28 Sep  6 04:27 1-confused_smiley
+-rwxr--r-- 1 root root   28 Sep  7 03:26 2-hellofile
+-rwxr--r-- 1 root root   39 Sep  7 03:28 3-twofiles
+-rwxr--r-- 1 root root   29 Sep  7 03:34 4-lastlines
+-rwxr--r-- 1 root root   35 Sep  6 05:48 5-firstlines
+-rwxr--r-- 1 root root   40 Sep  6 05:53 6-third_line
+-rwxr--r-- 1 root root   99 Sep  6 06:04 7-file
+-rwxr--r-- 1 root root   36 Sep  7 03:40 8-cwd_state
+-rwxr--r-- 1 root root   36 Sep  6 06:20 9-duplicate_last_line
+-rw-r--r-- 1 root root   12 Sep  6 06:06 \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root  790 Sep  6 06:20 iacta
+-rw-r--r-- 1 root root  169 Sep  6 10:52 list
+-rw-r--r-- 1 root root    0 Sep  7 03:40 ls_cwd_content
+-rwxr--r-- 1 root root   27 Sep  6 05:04 new
+-rw-r--r-- 1 root root  809 Sep  6 10:36 README.md
