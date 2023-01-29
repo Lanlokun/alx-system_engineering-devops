@@ -56,3 +56,17 @@
 <ul>
     ./6-superstitious_numbers
 </ul>
+
+
+# 7. Clock
+
+
+    Write a Bash script that displays the time for 12 hours and 59 minutes:
+
+    display hours from 0 to 12
+    display minutes from 1 to 59
+
+<ul>
+    ./7-clock | head -n 70
+</ul>
+
