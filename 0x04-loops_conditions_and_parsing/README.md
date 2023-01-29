@@ -15,3 +15,13 @@
 <ul>
     ./2-while_best_school 
 </ul>
+
+
+# 3. Until Best School loop
+
+    Write a Bash script that displays Best School 10 times using the Until loop
+
+
+<ul>
+    ./3-until_best_school 
+</ul>
