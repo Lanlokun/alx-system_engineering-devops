@@ -25,3 +25,11 @@
 <ul>
     ./3-until_best_school 
 </ul>
+
+# 4. If 9, say Hi!
+
+    Write a Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
+<ul>
+    .//4-if_9_say_hi
+</ul>
+
