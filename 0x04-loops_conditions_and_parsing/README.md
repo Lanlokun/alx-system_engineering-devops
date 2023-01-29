@@ -90,3 +90,19 @@
  <ul>
     ./9-to_file_or_not_to_file
 </ul>
+
+
+# 10. FizzBuzz
+
+
+    Write a Bash script that displays numbers from 1 to 100.
+
+    Displays FizzBuzz when the number is a multiple of 3 and 5
+    Displays Fizz when the number is multiple of 3
+    Displays Buzz when the number is a multiple of 5
+    Otherwise, displays the number
+    In a list format
+
+<ul>
+    ./10-fizzbuzz | head -20
+</ul>
