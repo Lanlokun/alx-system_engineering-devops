@@ -82,3 +82,11 @@
 <ul>
     ./8-for_ls
 </ul>
+
+# 9. To file, or not to file
+
+    Write a Bash script that gives you information about the school file.
+
+ <ul>
+    ./9-to_file_or_not_to_file
+</ul>
