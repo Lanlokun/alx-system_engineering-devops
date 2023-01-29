@@ -70,3 +70,15 @@
     ./7-clock | head -n 70
 </ul>
 
+# 8. For ls
+
+
+    Write a Bash script that displays:
+
+    The content of the current directory
+    In a list format
+    Where only the part of the name after the first dash is displayed (refer to the example)
+
+<ul>
+    ./8-for_ls
+</ul>
