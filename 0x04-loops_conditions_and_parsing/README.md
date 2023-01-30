@@ -125,3 +125,13 @@ Write a Bash script that displays the content of the file /etc/passwd.
 <ul>
     ./101-tell_the_story_of_passwd
 </ul>
+
+# 13. Let's parse Apache logs
+
+
+    Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+
+
+<ul>
+    ./102-lets_parse_apache_logs | tail -n 10
+</ul>
