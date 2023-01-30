@@ -115,3 +115,13 @@ Write a Bash script that displays the content of the file /etc/passwd.
 <ul>
     ./100-read_and_cut
 </ul>
+
+# 12. Tell the story of passwd
+
+    Write a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
+
+    Format: The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO
+
+<ul>
+    ./101-tell_the_story_of_passwd
+</ul>
