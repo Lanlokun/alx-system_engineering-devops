@@ -106,3 +106,12 @@
 <ul>
     ./10-fizzbuzz | head -20
 </ul>
+
+
+# 11. Read and cut
+
+Write a Bash script that displays the content of the file /etc/passwd.
+
+<ul>
+    ./100-read_and_cut
+</ul>
