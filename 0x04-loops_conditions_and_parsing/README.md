@@ -135,3 +135,13 @@ Write a Bash script that displays the content of the file /etc/passwd.
 <ul>
     ./102-lets_parse_apache_logs | tail -n 10
 </ul>
+
+
+# 14. Dig the data
+
+    Using what you did in the previous exercise, write a Bash script that groups visitors by IP and HTTP status code, and displays this data
+
+    
+<ul>
+    ./103-dig_the-data | head -n 10
+</ul>
