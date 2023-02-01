@@ -16,3 +16,8 @@
 # 5. Not quite HBTN yet
 
     ./5-beginning_and_end.rb 'hn' | cat -e
+
+# 6. Call me maybe
+
+    ./6-phone_number.rb 4155049898 | cat -e
+
