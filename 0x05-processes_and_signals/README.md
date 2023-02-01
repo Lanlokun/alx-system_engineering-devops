@@ -34,3 +34,12 @@
 <ul>
     ./3-show_your_bash_pid_made_easy
 </ul>
+
+# 4. To infinity and beyond
+
+    Write a Bash script that displays To infinity and beyond indefinitely.
+
+<ul>
+    ./4-to_infinity_and_beyond
+</ul>
+
