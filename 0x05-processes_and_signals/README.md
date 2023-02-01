@@ -126,3 +126,15 @@
 <ul>
     ./101-manage_my_process
 </ul>
+
+# 11. Zombie
+
+
+    Write a C program that creates 5 zombie processes.
+
+<ul>
+    gcc 102-zombie.c -o zombie
+    ./zombie 
+    (open another terminal)
+    ps aux | grep -e 'Z+.*<defunct>'
+</ul>
