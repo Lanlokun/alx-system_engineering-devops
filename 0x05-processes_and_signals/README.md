@@ -51,4 +51,11 @@
     ./5-dont_stop_me_now
 </ul>
 
+# 6. Stop me if you can
 
+    Write a Bash script that stops 4-to_infinity_and_beyond process.
+
+
+<ul>
+    ./6-stop_me_if_you_can
+</ul>
