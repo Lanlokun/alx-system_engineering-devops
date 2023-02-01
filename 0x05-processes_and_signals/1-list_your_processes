@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # list processes
 
+# source: https://linuxize.com/post/ps-command-in-linux/
 ps -auxf
