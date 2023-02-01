@@ -13,3 +13,6 @@
 
 # 4. Repetition Token #3
 
+# 5. Not quite HBTN yet
+
+    ./5-beginning_and_end.rb 'hn' | cat -e
