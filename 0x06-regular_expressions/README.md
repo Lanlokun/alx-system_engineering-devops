@@ -21,3 +21,5 @@
 
     ./6-phone_number.rb 4155049898 | cat -e
 
+# 7. OMG WHY ARE YOU SHOUTING?
+    /7-OMG_WHY_ARE_YOU_SHOUTING.rb "I realLy hOpe VancouvEr posseSs Yummy Soft vAnilla Dupper Mint Ice Nutella cream" | cat -e
