@@ -17,3 +17,13 @@
 <ul>
     ./1-list_your_processes | head -50
 </ul>
+
+# 2. Show your Bash PID
+
+    Using your previous exercise command, write a Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
+
+<ul>
+    ./2-show_your_bash_pid
+</ul>
+
+
