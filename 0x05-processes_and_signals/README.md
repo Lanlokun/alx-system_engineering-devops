@@ -27,3 +27,10 @@
 </ul>
 
 
+# 3. Show your Bash PID made easy
+
+    Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.
+
+<ul>
+    ./3-show_your_bash_pid_made_easy
+</ul>
