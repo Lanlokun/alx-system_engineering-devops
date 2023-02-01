@@ -7,5 +7,5 @@
 
 # 1. Repetition Token #0
 
-    1-repetition_token_0.rb
+# 2. Repetition Token #1
 
