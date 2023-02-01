@@ -67,3 +67,14 @@
 <ul>
     ./7-highlander
 </ul>
+
+# 8. Beheaded process
+
+
+    Write a Bash script that kills the process 7-highlander.
+
+<ul>
+    ./7-highlander
+    (open another terminal)
+     ./8-beheaded_process
+</ul>
