@@ -75,3 +75,24 @@ Is a number that network devices use to connect to networks
 
 That only shows listening sockets
 That shows the PID and name of the program to which each socket belongs
+
+
+<ul>
+    
+    ./4-TCP_and_UDP_ports
+
+</ul>
+
+6. Write a Bash script that pings an IP address passed as an argument.
+
+Requirements:
+
+Accepts a string as an argument
+Displays Usage: 5-is_the_host_on_the_network {IP_ADDRESS} if no argument passed
+Ping the IP 5 times
+
+<ul>
+    
+    ./5-is_the_host_on_the_network 8.8.8.8
+        
+</ul>
