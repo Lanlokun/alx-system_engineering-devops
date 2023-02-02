@@ -23,3 +23,24 @@ Write a Bash script that displays all active IPv4 IPs on the machine it’s exec
 <ul>
     ./1-show_attached_IPs | cat -e
 </ul>
+
+# 2. Port listening on localhost
+
+Write a Bash script that listens on port 98 on localhost.
+
+
+<ul>
+
+    sudo ./100-port_listening_on_localhost
+
+    (open_new_terminal)
+
+    telnet localhost 98
+
+    (on_previous_terminal)
+
+    sudo ./100-port_listening_on_localhost
+
+</ul>
+
+
