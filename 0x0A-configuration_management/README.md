@@ -19,3 +19,12 @@
 </ul>
 
 
+# 2. Execute a command
+
+<ul>
+
+    puppet apply 1-install_a_package.pp
+    flask --version
+
+</ul>
+
