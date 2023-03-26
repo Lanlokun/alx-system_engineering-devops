@@ -22,3 +22,11 @@
 
 <span>replace ip with yours</span>
 </ul>
+
+# 4. Client configuration file (w/ Puppet)
+
+
+<ul>
+    sudo puppet apply 100-puppet_ssh_config.pp
+
+</ul>
