@@ -6,3 +6,10 @@
 <ul>
     ./0-use_a_private_key
 </ul>
+
+# 1. Create an SSH key pair
+
+
+<ul>
+    ./1-create_ssh_key_pair
+</ul>
