@@ -13,3 +13,12 @@
 <ul>
     ./1-create_ssh_key_pair
 </ul>
+
+# 2. Client configuration file
+
+
+<ul>
+    ssh -v ubuntu@0.0.0.0
+
+<span>replace ip with yours</span>
+</ul>
