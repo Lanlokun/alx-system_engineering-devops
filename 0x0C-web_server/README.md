@@ -8,3 +8,11 @@
     ./0-transfer_file
     ssh ubuntu@8.8.8.8 -i /vagrant/private_key 'ls ~/'
 </ul>
+
+# 1. Install nginx web server
+
+
+<ul>
+    ./1-install_nginx_web_server > /dev/null 2>&1
+    curl localhost
+</ul>
