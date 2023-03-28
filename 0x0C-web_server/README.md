@@ -16,3 +16,12 @@
     ./1-install_nginx_web_server > /dev/null 2>&1
     curl localhost
 </ul>
+
+
+# 2. Setup a domain name
+
+
+<ul>
+    dig kwye.tech
+
+</ul>
