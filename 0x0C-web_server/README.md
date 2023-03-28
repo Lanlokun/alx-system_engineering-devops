@@ -25,3 +25,11 @@
     dig kwye.tech
 
 </ul>
+
+# 3. Redirection
+
+
+<ul>
+    curl -sI 34.198.248.145/redirect_me/
+
+</ul>
