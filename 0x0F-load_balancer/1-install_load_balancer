@@ -2,25 +2,25 @@
 
 # Install and configure HAproxy on your lb-01 server.
 
-sudo apt-get update
+load_balancer_config= "\
+frontend http-in
+    bind *:80
+    mode http
+    default_backend webservers
+
+backend webservers
+    mode http
+    balance roundrobin
+    option httpchk GET /health_check
+    http-check expect status 200
+    server web-01
+    server web-02
+"
+sudo apt-get -y update
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-1.8
+sudo apt-get -y update
 sudo apt-get install -y haproxy
-sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
-sudo touch /etc/haproxy/haproxy.cfg
-sudo echo "global" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    daemon" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    maxconn 256" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "defaults" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    mode http" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    option httplog" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    option dontlognull" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    timeout connect 5000" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    timeout client 50000" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    timeout server 50000" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "frontend http-in" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    bind *:80" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    default_backend webservers" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "backend webservers" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    balance roundrobin" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    server web-01" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo echo "    server web-02" | sudo tee -a /etc/haproxy/haproxy.cfg
+cp -a /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.orig
+echo "$load_balancer_config" | sudo tee /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
