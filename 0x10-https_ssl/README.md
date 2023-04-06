@@ -23,3 +23,13 @@
      curl -sI https://www.holberton.online
      curl https://www.holberton.online
 </ul>
+
+# 2. No loophole in your website traffic
+
+    A good habit is to enforce HTTPS traffic so that no unencrypted traffic is possible. Configure HAproxy to automatically redirect HTTP traffic to HTTPS.
+
+
+<ul>
+    curl -sIL http://www.holberton.online
+    
+</ul>
