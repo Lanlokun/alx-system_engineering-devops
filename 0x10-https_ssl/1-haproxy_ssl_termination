@@ -29,15 +29,15 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 # config for www.kwye.tech fronted and backend load balancing
-frontend kwye-front1
+frontend kwye-frontend1
         bind    *:80
         default_backend kwye-back
 
-frontend kwye-front2
+frontend kwye-frontend2
         bind *:443 ssl crt /etc/letsencrypt/live/www.kwye.tech/all.pem
         default_backend kwye-back
 
-backend kwye-back
+backend kwye-backend
         balance roundrobin
         server 5555-web-01 34.207.253.69:80 check
         server 5555-web-02 54.152.7.56:80 check
