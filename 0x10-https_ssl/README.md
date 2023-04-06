@@ -11,3 +11,15 @@
      ./0-world_wide_web holberton.online    
 
 </ul>
+
+# 1. HAproxy SSL termination
+
+    “Terminating SSL on HAproxy” means that HAproxy is configured to handle encrypted traffic, unencrypt it and pass it on to its destination.
+
+    Create a certificate using certbot and configure HAproxy to accept encrypted traffic for your subdomain www..
+
+<ul>
+
+     curl -sI https://www.holberton.online
+     curl https://www.holberton.online
+</ul>
