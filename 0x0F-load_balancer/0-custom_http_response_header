@@ -8,5 +8,6 @@ sudo apt-get install ufw
 sudo ufw allow 'Nginx HTTP'
 echo "Hello World" | sudo tee /var/www/html/index.nginx-debian.html
 echo "Page you are looking for is not here" | sudo tee /var/www/html/custom_404.html
-sudo sed -i '/listen 80 default_server;/a add_header X-Served-By $HOSTNAME;/a error_page custom_404.html;' /etc/nginx/sites-available/default
+sudo sed -i '/listen 80 default_server;/a add_header X-Served-By $HOSTNAME;' /etc/nginx/sites-available/default
+sudo sed -i '/add_header X-Served-By $HOSTNAME;/a error_page custom_404.html;' /etc/nginx/sites-available/default
 sudo service nginx reload
