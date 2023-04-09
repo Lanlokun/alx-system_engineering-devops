@@ -20,6 +20,6 @@ sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-1.8
 sudo apt-get -y update
 sudo apt-get install -y haproxy
-cp -a /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.orig
+sudo cp -a /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.orig
 echo "$load_balancer_config" | sudo tee /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
