@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# set up firewall
+# port forwarding
 
 sudo apt-get install ufw
 sudo ufw status
@@ -9,4 +9,8 @@ sudo ufw default allow outgoing
 sudo ufw allow 22/tcp
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
+sudo ufw allow 8080/tcp
 sudo ufw enable
+sudo ufw redirect 8080/tcp to 80/tcp
+sudo ufw show added
+sudo ufw reload
