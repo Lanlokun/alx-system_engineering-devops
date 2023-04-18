@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Get current date for naming the backup file
+DATE=$(date +"%d-%m-%Y")
+
+# Define backup directory and file names
+BACKUP_DIR="/home/ubuntu/backups"
+BACKUP_FILE="backup.sql"
+ARCHIVE_FILE="$DATE.tar.gz"
+
+# MySQL database credentials
+MYSQL_USER="root"
+MYSQL_PASSWORD="$1"
+
+# Create backup directory if it doesn't exist
+if [ ! -d "$BACKUP_DIR" ]; then
+  mkdir -p "$BACKUP_DIR"
+fi
+
+# Generate MySQL dump
+mysqldump -u "$MYSQL_USER" -p"$MYSQL_PASSWORD" --all-databases > "$BACKUP_DIR/$BACKUP_FILE"
+
+# Create compressed archive of MySQL dump
+tar -czvf "$BACKUP_DIR/$ARCHIVE_FILE" "$BACKUP_DIR/$BACKUP_FILE"
+
+# Remove uncompressed MySQL dump file
+rm "$BACKUP_DIR/$BACKUP_FILE"
