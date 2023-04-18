@@ -1,7 +1,6 @@
 # /etc/ufw/rules.before
 # /etc/ufw/sysctl.conf
 
-
 # ----- before.rules file ------
 
 # rules.before
