@@ -1,6 +1,6 @@
 #!/bin/bash
-
 # stop nginx service if it's already running
+
 sudo service nginx stop
 
 # set nginx user and group to nginx
