@@ -22,6 +22,3 @@ mysqldump -u "$MYSQL_USER" -p"$MYSQL_PASSWORD" --all-databases > "$BACKUP_DIR/$B
 
 # Create compressed archive of MySQL dump
 tar -czvf "$BACKUP_DIR/$ARCHIVE_FILE" "$BACKUP_DIR/$BACKUP_FILE"
-
-# Remove uncompressed MySQL dump file
-rm "$BACKUP_DIR/$BACKUP_FILE"
