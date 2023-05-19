@@ -3,7 +3,6 @@
 set -e
 
 SERVICE_NAME="gunicorn"
-WORKER_COUNT=3
 
 # Check if Gunicorn service is running
 if ! systemctl is-active --quiet "$SERVICE_NAME"; then
@@ -11,32 +10,8 @@ if ! systemctl is-active --quiet "$SERVICE_NAME"; then
     exit 1
 fi
 
-# Get the current number of active workers
-active_workers=$(sudo systemctl show "$SERVICE_NAME" --property=ActiveWorkers --value)
-
-# Calculate the number of workers to gracefully restart
-workers_to_restart=$((active_workers / 2))
-
-# Restart the specified number of workers
+# Reload Gunicorn gracefully
 sudo systemctl reload "$SERVICE_NAME"
-echo "Restarting $workers_to_restart workers gracefully..."
 
-# Wait for the workers to restart
-sleep 5
-
-# Verify the number of active workers after the restart
-active_workers=$(sudo systemctl show "$SERVICE_NAME" --property=ActiveWorkers --value)
-
-# Calculate the number of remaining workers to restart
-remaining_workers=$((workers_to_restart - active_workers))
-
-# Continue restarting remaining workers until all are restarted
-while [[ $remaining_workers -gt 0 ]]; do
-    sudo systemctl reload "$SERVICE_NAME"
-    echo "Restarting $remaining_workers workers gracefully..."
-    sleep 5
-    active_workers=$(sudo systemctl show "$SERVICE_NAME" --property=ActiveWorkers --value)
-    remaining_workers=$((workers_to_restart - active_workers))
-done
-
-echo "Gunicorn reloaded gracefully with a progressive rollout."
+echo "Gunicorn reloaded gracefully."
+    
