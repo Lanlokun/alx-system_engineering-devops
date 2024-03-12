@@ -23,7 +23,7 @@ def first_line(id):
     filename = 'student_output'
 
     with open(filename, 'r') as f:
-        first = f.readline().strip()
+        first = f.readline(5_000_000).strip()
         print("First line: {}".format(first))
 
     if name in first:
